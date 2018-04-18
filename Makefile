@@ -193,7 +193,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?=arm
-CROSS_COMPILE	?=ccache /home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-i686_arm-eabi/bin/arm-eabi-
+CROSS_COMPILE	?=ccache /home/madscript/Github/KernelBuilder_Pack/Toolchains/gcc-linaro-4.9.4-2017.01-x86_64_arm-eabi/bin/arm-eabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
